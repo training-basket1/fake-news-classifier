@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <title>Fakenews</title>
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="static/images/trainingbasket.jpg" style="height: 80px;width: 80px;"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="text-box">
+            <h1>Fakenews</h1>
+            <p>Fake news is the deliberate presentation of (typically) false or<br> misleading claims as news, where the claims are misleading by design.<br>News outlets benefitted from the widespread use of social media/mobile platforms by providing updated news in near real time to its subscribers.</p>
+        <!--    <a href="index.html" class="btn">Visite Us To Know More</a>-->
+           <!--<ul class="news">
+                <li><img src="static/images/paper1.jpg" width="250px" height="250px"></li>
+                <li><img src="static/images/paper2.jpg" width="250px" height="250px"></li>
+                <li><img src="static/images/paper3.jpg" width="250px" height="250px"></li>
+            </ul>-->  <form action="\predict" method="post">
+                <div>
+                    <label>NEWS</label><br>
+                    <textarea type="text" name="text" id="text" cols="40" rows="5" style="height: 100px;width: 450px; border-radius: 10px;"></textarea>
+            <br>
+            <br>      
+            <input type="submit" value="Submit" class="btn" style="background-color: rgb(6, 54, 71); font-size: small; font-weight: 800; border: 5px  solid whitesmoke;">
+            </form> 
+            <h3>{{ prediction_text }}</h3>
+            </div>
+        
+                
+              
+    </section>
+ 
+</body>
+
+</html>
+
